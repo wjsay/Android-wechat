@@ -99,9 +99,9 @@ public class Utils {
         try {
             Class.forName("com.mysql.jdbc.Driver"); //加载驱动
             //根据数据库的URL 用户名 密码  来连接数据库
-            String ip = "139.199.38.177";//文的腾讯云服务器公网IP（北京）
+            String ip = "*****";//文的腾讯云服务器公网IP（北京）
             conn = DriverManager.getConnection(
-                    "jdbc:mysql://" + ip + ":3306/" + dbName, "weixin", "soft02");
+                    "jdbc:mysql://" + ip + ":3306/" + dbName, "****", "***");
         } catch (SQLException ex) {
             Log.e(TAG, " SQL语句执行错误");
         } catch (ClassNotFoundException ex) {
